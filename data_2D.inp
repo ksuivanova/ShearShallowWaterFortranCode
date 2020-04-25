@@ -1,0 +1,34 @@
+1 0 0                             ! penteX, penteY, WALLS 
+1 0 0                             ! twoD, oneDX, oneDY
+5 1 0                              ! cond_lim: 1 box ;/ 2 absorption / 3 batteur/ 4 hydraulic jump/5 solution analityque                       
+0.0d0                             ! inclination angle
+400 400                          ! Nombre de mailles
+10.0d0  10.0d0	                   ! DOMAIN LENGTH
+10.0d0	                           ! Temps final
+99900000                           ! Nombre d'iterations totales
+9.81d0 0.5d0                       ! acceleration due to gravity, cfl
+1.00d0                              ! H_0
+0.0d0  0.000d0                          ! phi2; dev
+0.00d0 0.000d0                ! cf, cr
+0.0d0                             ! amplitude des perturbation; 
+1000 10000                         ! ImpreE, ImpreF
+0.1d0 0.01d0 0.001d0                  ! lambda, gamma, beta
+
+
+1 0 1                             ! penteX, penteY, WALLS 
+1 0 0                             ! twoD, oneDX, oneDY
+1 3 0                             ! cond_lim: 1 box/ 2 absorption / 3 batteur/ 4 hydraulic jump ;methodde terme source;test shear 
+0.119528d0                         ! inclination angle
+3000 200                           ! Nombre de mailles
+1.8d0  0.5d0	                   ! DOMAIN LENGTH
+300.0d0	                           ! Temps final
+90000000                           ! Nombre d'iterations totales
+9.81d0 0.8d0                       ! acceleration due to gravity, cfl
+0.00533d0                          ! H_0
+153.501d0                          ! phi2
+0.0038d0 0.002d0                   ! cf, cr
+0.05d0                             ! amplitude des perturbation; 
+1000 10000                         ! ImpreE, ImpreF
+
+
+

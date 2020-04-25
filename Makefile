@@ -5,20 +5,20 @@
 # "make all " => le tout (sauf cleanall)
 
 # Nom du compilateur sequentiel
-COMPSER  = f90
+COMPSER  = mpif90
 
 # Nom du compilateur parallele
-COMPILE =  mpif90
+COMPILE = mpif90
 # mpif90 #ifort
 # Options de Compilation
 # OPT = -C
-OPT =  -O3 
+OPT =  -O3
 
 # Chemin des sources
 PATHSRC=./
 
 # Executable
-SRC = main_grad
+SRC = main2Dv1Or2Parallele
 #Or2Parallele
 EXE = $(SRC)
 OBJS = $(SRC).o
